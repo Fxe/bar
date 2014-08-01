@@ -3,7 +3,7 @@
 
   <groupId>com.jonh.smith</groupId>
   <artifactId>bar</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.0.1</version>
   <packaging>jar</packaging>
 
   <name>bar</name>
@@ -21,6 +21,7 @@
     <connection>scm:git:https://github.com/Fxe/bar.git</connection>
     <url>http://github.com/Fxe/bar</url>
     <developerConnection>scm:git:https://github.com/Fxe/bar.git</developerConnection>
+    <tag>bar-0.0.1</tag>
   </scm>
   
   <profiles>
