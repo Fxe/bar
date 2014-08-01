@@ -3,7 +3,7 @@
 
   <groupId>com.jonh.smith</groupId>
   <artifactId>bar</artifactId>
-  <version>0.0.1</version>
+  <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>bar</name>
@@ -22,6 +22,35 @@
     <url>http://github.com/Fxe/bar</url>
     <developerConnection>scm:git:https://github.com/Fxe/bar.git</developerConnection>
   </scm>
+  
+  <profiles>
+    <profile>
+      <id>releases</id>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.sonatype.plugins</groupId>
+            <artifactId>nexus-staging-maven-plugin</artifactId>
+            <version>1.5.1</version>
+            <executions>
+              <execution>
+                <id>default-deploy</id>
+                <phase>deploy</phase>
+                <goals>
+                  <goal>deploy</goal>
+                </goals>
+              </execution>
+            </executions>
+            <configuration>
+              <serverId>watson</serverId>
+              <nexusUrl>http://192.168.1.99:8081/nexus</nexusUrl>
+              <skipStaging>true</skipStaging>
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
 
 <!-- 
   <repositories>
