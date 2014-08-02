@@ -13,7 +13,7 @@
   <distributionManagement>
     <snapshotRepository>
       <id>watson</id>
-      <url>http://192.168.1.99:8081/nexus/content/repositories/test1</url>
+      <url>http://193.137.90.2:8081/nexus/content/repositories/test1</url>
     </snapshotRepository>
   </distributionManagement>
 
@@ -44,7 +44,7 @@
             </executions>
             <configuration>
               <serverId>watson</serverId>
-              <nexusUrl>http://192.168.1.99:8081/nexus</nexusUrl>
+              <nexusUrl>http://193.137.90.2:8081/nexus</nexusUrl>
               <skipStaging>true</skipStaging>
             </configuration>
           </plugin>
@@ -83,7 +83,7 @@
         <extensions>true</extensions>
         <configuration>
           <serverId>watson</serverId>
-          <nexusUrl>http://192.168.1.99:8081/nexus</nexusUrl>          
+          <nexusUrl>http://193.137.90.2:8081/nexus</nexusUrl>          
         </configuration>
       </plugin>
     </plugins>
