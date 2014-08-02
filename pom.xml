@@ -18,9 +18,9 @@
   </distributionManagement>
 
   <scm>
-    <connection>scm:git:https://github.com/Fxe/bar.git</connection>
-    <url>http://github.com/Fxe/bar</url>
-    <developerConnection>scm:git:https://github.com/Fxe/bar.git</developerConnection>
+    <connection>scm:git:git@193.137.90.2:test/bar.git</connection>
+    <url>http://193.137.90.2/test/bar</url>
+    <developerConnection>scm:git:git@193.137.90.2:test/bar.git</developerConnection>
     <tag>bar-0.0.1</tag>
   </scm>
   
